@@ -15,11 +15,13 @@ namespace sudoko
         public string numbs = "";
         public int index = 0;
 
-        public Game(string nummer)
+        public Game(string nummer)//Constructor som kör createboard metod.
         {
             numbs = nummer;
+            CreateBoard();
+
         }
-        public void CreateBoard()
+        public void CreateBoard()//siffrorna blir en 2d-array.
         {
             for (int i = 0; i < 9; i++)
             {
@@ -32,7 +34,7 @@ namespace sudoko
             DisplayBoard();
         }
 
-        public void DisplayBoard()
+        public void DisplayBoard()//brädet skrivs ut.
         {
             for (int i = 0; i < 9; i++)//utskrift  
             {
