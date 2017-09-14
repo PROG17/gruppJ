@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography;
@@ -8,19 +8,17 @@ using System.Threading.Tasks;
 namespace sudoko
 {
 
-    public class Game
+    public class Sudoku
     {
         //fields  
         public int[,] board = new int[9, 9];
         public string numbs = "";
         public int index = 0;
-        
 
-        public Game(string nummer)
+        public Sudoku(string nummer)
         {
             numbs = nummer;
         }
-
         public void CreateBoard()
         {
             for (int i = 0; i < 9; i++)
@@ -54,7 +52,25 @@ namespace sudoko
                 }
             }
         }
+        public void Solve()
+        {
+            bool solved = false;
+            while (solved == false)
+            {
+                for (int i = 0; i < 9; i++)
+                {
+                    for (int j = 0; j < 9; j++)
+                    {
+                        if (board[i, j] == 0)
+                        {
 
-        
+                        }
+                    }
+
+                }
+            }
+        }
     }
 }
+        
+    
