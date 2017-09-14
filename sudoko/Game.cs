@@ -8,14 +8,14 @@ using System.Threading.Tasks;
 namespace sudoko
 {
 
-    public class Sudoku
+    public class Game
     {
         //fields  
         public int[,] board = new int[9, 9];
         public string numbs = "";
         public int index = 0;
 
-        public Sudoku(string nummer)
+        public Game(string nummer)
         {
             numbs = nummer;
         }
